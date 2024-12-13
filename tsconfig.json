@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES5",                        // Transpile to ES5 for wider compatibility
+    "lib": ["dom", "es6"],                   // Include dom and es6 libraries
+    "jsx": "react-jsx",                      // Use React JSX transform
+    "moduleResolution": "node",              // Module resolution strategy
+    "esModuleInterop": true,                 // Enable compatibility with non-ESM modules
+    "skipLibCheck": true,                    // Skip library type checks (can speed up build)
+    "forceConsistentCasingInFileNames": true // Ensures consistent casing of file names
+  },
+  "include": ["src"],                        // Include all TypeScript files in the 'src' folder
+  "exclude": ["node_modules"]                // Exclude 'node_modules' folder
+}

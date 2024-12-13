@@ -1,0 +1,35 @@
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.title-shadow {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.font-oswald {
+  font-family: 'Oswald', sans-serif;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Custom animation */
+@keyframes sunshine {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-sunshine {
+  animation: sunshine 10s infinite linear;
+}
