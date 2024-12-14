@@ -1,35 +1,134 @@
-/* App.css */
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #0d1117; /* Dark theme for better contrast */
+  color: #ffffff;
+  position: relative;
 }
 
-.container {
-  background-color: #f0f0f0;
-  padding: 20px;
+/* Container for the Animated Diagonal Line */
+.bg-gradient-diagonal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+  background: #0d1117; /* Initial background color */
+  overflow: hidden;
 }
 
-.title-shadow {
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+/* Animated Diagonal Layer (line) */
+.bg-gradient-diagonal::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, #ff6f61, #2f80ed, #ffc371, #47bfdf);
+  background-size: 300% 300%;
+  animation: diagonalLineMove 5s ease-in-out infinite, colorChange 5s ease-in-out infinite;
 }
 
-.font-oswald {
-  font-family: 'Oswald', sans-serif;
-}
-
-.font-poppins {
-  font-family: 'Poppins', sans-serif;
-}
-
-/* Custom animation */
-@keyframes sunshine {
+/* Keyframes for Diagonal Line Movement */
+@keyframes diagonalLineMove {
   0% {
-    transform: rotate(0deg);
+    transform: translateX(-100%) translateY(-100%);
   }
   100% {
-    transform: rotate(360deg);
+    transform: translateX(100%) translateY(100%);
   }
 }
 
-.animate-sunshine {
-  animation: sunshine 10s infinite linear;
+/* Keyframes for Background Color Change */
+@keyframes colorChange {
+  0% {
+    background: linear-gradient(45deg, #ff6f61, #2f80ed, #ffc371, #47bfdf);
+    background-size: 300% 300%;
+  }
+  25% {
+    background: linear-gradient(45deg, #ff6f61, #ff6f61, #ffc371, #47bfdf);
+    background-size: 300% 300%;
+  }
+  50% {
+    background: linear-gradient(45deg, #ff6f61, #ffc371, #2f80ed, #47bfdf);
+    background-size: 300% 300%;
+  }
+  75% {
+    background: linear-gradient(45deg, #47bfdf, #ff6f61, #ffc371, #2f80ed);
+    background-size: 300% 300%;
+  }
+  100% {
+    background: linear-gradient(45deg, #47bfdf, #2f80ed, #ff6f61, #ffc371);
+    background-size: 300% 300%;
+  }
+}
+
+/* Text Animation */
+h1, h2, h3 {
+  animation: pulse 3s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Hover Interaction */
+.smooth-hover:hover {
+  transform: scale(1.08);
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Fade In Effect */
+.fadeIn {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Floating Elements */
+.particle {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  animation: floatParticle 10s infinite ease-in-out;
+}
+
+@keyframes floatParticle {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(100px, -150px) scale(1.3);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate(-50px, 200px) scale(1);
+    opacity: 0.2;
+  }
 }
