@@ -12,8 +12,10 @@ import image29 from "./images/29.jpg";
 import image30 from "./images/30.jpg";
 import image31 from "./images/31.jpg";
 import image32 from "./images/32.jpg";
-import image33 from "./images/33.jpg";
 import image34 from "./images/34.jpg";
+import ContactForm from './ContactForm';
+
+
 
 const BiodataPage: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -163,7 +165,10 @@ const BiodataPage: React.FC = () => {
           ))}
         </div>
       </div>
-
+      <div className="max-w-4xl mt-10">
+        <h3 className="text-2xl font-extrabold mb-4 text-gray-200">Get in Touch</h3>
+      </div>
+      <ContactForm />
       {/* Lightbox Modal */}
       {isOpen && (
         <div
@@ -197,6 +202,7 @@ const BiodataPage: React.FC = () => {
             </button>
           </div>
         </div>
+        
       )}
     </div>
   );
