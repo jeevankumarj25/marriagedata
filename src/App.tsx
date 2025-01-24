@@ -12,6 +12,7 @@ import image29 from "./images/29.jpg";
 import image30 from "./images/30.jpg";
 import image31 from "./images/31.jpg";
 import image32 from "./images/32.jpg";
+import jee1 from './images/jee1.jpg';
 
 const BiodataPage: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -79,8 +80,8 @@ const BiodataPage: React.FC = () => {
         <div className="flex flex-col sm:flex-row items-center gap-8">
           <div className="w-36 h-36 overflow-hidden rounded-full border-4 border-gradient-to-r from-[#4649b2] to-[#0c0d0d] shadow-lg transform transition-transform hover:scale-110 hover:shadow-2xl">
             <img
-              src="https://i.imghippo.com/files/yUh5255rAc.jpg"
-              alt="Profile"
+              src={image29}
+              alt="Jee1"
               className="w-full h-full object-cover"
             />
           </div>
@@ -168,7 +169,7 @@ const BiodataPage: React.FC = () => {
           className="fixed inset-0 bg-black bg-opacity-75 z-50 flex justify-center items-center"
           onClick={handleOutsideClick} // Add the click outside listener
         >
-          <div className="relative">
+          <div className="relative max-w-full w-full max-h-full p-4">
             <button
               className="absolute top-4 right-4 text-white text-3xl"
               onClick={closeLightbox}
@@ -178,7 +179,7 @@ const BiodataPage: React.FC = () => {
             <img
               src={images[currentIndex]}
               alt={`Lightbox Image ${currentIndex + 1}`}
-              className="max-w-3xl max-h-screen object-contain"
+              className="w-full h-auto max-h-[90vh] object-contain mx-auto" // Ensure image fits within the viewport on mobile
             />
             {/* Navigation buttons */}
             <button
