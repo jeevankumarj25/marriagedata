@@ -116,9 +116,9 @@ const BiodataPage: React.FC = () => {
 
       {/* Details Section */}
       <div className="max-w-4xl w-full mt-10 grid grid-cols-1 sm:grid-cols-2 gap-8">
-        {[{title: "Family Details", details: ["Grandfather: Gurusamy", "Father: Narasimhulu N (9876543210)", "Mother: Vijaya N", "Elder Brother: Gowtham N", "Sister-In-Law: Apoorva A", "Address: NO.396 Manjunatha Nagar, Ooorgaumpet"]},
-          {title: "Horoscope Details", details: ["Date of Birth: 03 July 1996", "Time of Birth: 11:43 AM", "Rashi: Vrishabha (Taurus)", "Nakshatra: Rohini", "Height: 5'8\""]},
-          {title: "Education & Career Details", details: ["Education: B.Tech in Computer Science", "Occupation: Software Engineer", "Company: XYZ Tech", "Experience: 5 years in software development"]},
+        {[{title: "Family Details", details: ["Grandfather: Gurusamy", "Father: Narasimhulu N ", "Mother: Vijaya N", "Elder Brother: Gowtham N", "Sister-In-Law: Apoorva A", "Address: NO.396 Manjunatha Nagar, Ooorgaumpet K G F"]},
+          {title: "Horoscope Details", details: ["Date of Birth: 03 July 1996", "Time of Birth: 11:43 AM", "Rashi: Makara (Capricorn)", "Nakshatra: Shravana", "Height: 5'8\""]},
+          {title: "Education & Career Details", details: ["Education: Bachelor of Engineering", "Occupation: Software Engineer", "Company: IT-Guy technologies", "Experience: 5 years in software development"]},
           {title: "Lifestyle & Values", details: ["Non-smoker", "Non-drinker", "Fitness Enthusiast", "Believer in Work-Life Balance", "Family-Oriented"]},
           {title: "Hobbies", details: ["Traveling to scenic destinations", "Exploring new cuisines", "Reading technology and self-improvement books", "Playing cricket and badminton"]},
           {title: "Preferred Partner", details: ["Age: 23–27", "Height: 5'3\"–5'8\"", "Education: Graduate or higher", "Profession: Any professional background", "Location Preference: Bangalore or nearby"]},
