@@ -166,7 +166,7 @@ const BiodataPage: React.FC = () => {
         </div>
       </div>
       <div className="max-w-4xl mt-10">
-        <h3 className="text-3xl font-bold mb-6 text-center text-gray-200">Get in Touch</h3>
+        <h3 className="text-xl font-bold mb-6 text-center text-gray-200">Get in Touch</h3>
       </div>
       <ContactForm />
       {/* Lightbox Modal */}
