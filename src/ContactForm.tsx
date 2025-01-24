@@ -58,7 +58,7 @@ const ContactForm: React.FC = () => {
     <div className="max-w-4xl w-full bg-gradient-to-br from-[#121212] via-[#4649b2] to-[#0c0d0d] rounded-xl p-8 shadow-xl hover:shadow-2xl transition-shadow">
       {/* Section Heading Outside the Form */}
       <div className="text-center mb-6 px-4">
-      <h3 className="text-3xl font-bold mb-6 text-center text-gray-200">
+      <h3 className="text-xl font-bold mb-6 text-center text-gray-200">
   Share Your Details and Let's Start a Conversation
 </h3>
 
