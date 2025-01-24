@@ -12,7 +12,8 @@ import image29 from "./images/29.jpg";
 import image30 from "./images/30.jpg";
 import image31 from "./images/31.jpg";
 import image32 from "./images/32.jpg";
-import jee1 from './images/jee1.jpg';
+import image33 from "./images/33.jpg";
+import image34 from "./images/34.jpg";
 
 const BiodataPage: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -80,7 +81,7 @@ const BiodataPage: React.FC = () => {
         <div className="flex flex-col sm:flex-row items-center gap-8">
           <div className="w-36 h-36 overflow-hidden rounded-full border-4 border-gradient-to-r from-[#4649b2] to-[#0c0d0d] shadow-lg transform transition-transform hover:scale-110 hover:shadow-2xl">
             <img
-              src={image29}
+              src={image34}
               alt="Jee1"
               className="w-full h-full object-cover"
             />
