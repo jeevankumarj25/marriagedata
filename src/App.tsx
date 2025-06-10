@@ -1,18 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "react-image-lightbox/style.css"; // Import the lightbox CSS
-import image21 from "./images/21.jpg";
-import image22 from "./images/22.jpg";
-import image23 from "./images/23.jpg";
-import image24 from "./images/24.jpg";
-import image25 from "./images/25.jpg";
-import image26 from "./images/26.jpg";
-import image27 from "./images/27.jpg";
-import image28 from "./images/28.jpg";
-import image29 from "./images/29.jpg";
-import image30 from "./images/30.jpg";
-import image31 from "./images/31.jpg";
-import image32 from "./images/32.jpg";
-import image34 from "./images/34.jpg";
+import image111 from "./images/111.jpg";
+import image222 from "./images/222.jpg";
+import image333 from "./images/333.jpg";
+
 import ContactForm from './ContactForm';
 
 
@@ -22,18 +13,9 @@ const BiodataPage: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = [
-    image21,
-    image22,
-    image23,
-    image24,
-    image25,
-    image26,
-    image27,
-    image28,
-    image29,
-    image30,
-    image31,
-    image32,
+    image111,
+    image222,
+    image333,
   ];
 
   const openLightbox = (index: number) => {
@@ -83,7 +65,7 @@ const BiodataPage: React.FC = () => {
         <div className="flex flex-col sm:flex-row items-center gap-8">
           <div className="w-36 h-36 overflow-hidden rounded-full border-4 border-gradient-to-r from-[#4649b2] to-[#0c0d0d] shadow-lg transform transition-transform hover:scale-110 hover:shadow-2xl">
             <img
-              src={image34}
+              src={image111}
               alt="Jee1"
               className="w-full h-full object-cover"
             />
